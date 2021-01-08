@@ -1,0 +1,283 @@
+<html>
+    <header>
+        <title>Menue Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+        body, html {height: 100%}
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+        .menu {display: none}
+        .bgimg {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url("/w3images/pizza.jpg");
+          min-height: 90%;
+        }
+        .container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: red;
+  padding-left: 0px;
+  padding-right: 0px;
+ 
+}
+        </style>
+    </header>
+    <body>
+        <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-content">
+            
+              <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+              <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                  <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                  <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                  <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+                </a>
+               
+
+              </div>
+          
+		  <form  action="action_page.php" method="post">
+              <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$15.20</h2>
+                    </div>
+                  </div>
+                </span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                
+                  <input type="checkbox" name="food" id="Margherita" value="15.20">
+                
+                <hr>
+                          
+                <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Formaggio.jpg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$15.30</h2>
+                    </div>
+                  </div>
+                </span></h1>
+                 <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                 
+                  <input type="checkbox" name="food" id="Formaggio" value="15.30">
+               
+                <hr>
+                
+                
+               <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                <div class="container">
+                  <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                  <div class="text-block">
+                    <h2>$17.00</h2>
+                  </div>
+                </div>
+              </span></h1>
+               <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+               
+                <input type="checkbox" name="food"  id="Chicken" value="17.00">
+              
+              <hr>
+
+          <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                <div class="container">
+                  <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                  <div class="text-block">
+                    <h2>$16.50</h2>
+                  </div>
+                </div>
+              </span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+         
+          <input type="checkbox" name="food" id="Pineapple_o_clock" value="16.50">
+        
+              <hr>
+          
+                
+              <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">
+                <div class="container">
+                  <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                  <div class="text-block">
+                    <h2>$20.00</h2>
+                  </div>
+                </div>
+              </span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+         
+          <input type="checkbox" name="food" id="Meat_Town" value="20.00">
+        
+              <hr>
+
+              <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">
+                <div class="container">
+                  <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                  <div class="text-block">
+                    <h2>$21.50</h2>
+                  </div>
+                </div>
+              </span></h1>
+          <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+          
+            <input type="checkbox" name="food" id="Parma" value="21.50">
+          
+            </div>
+          
+              <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                
+              <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                <div class="container">
+                  <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                  <div class="text-block">
+                    <h2>$13.50</h2>
+                  </div>
+                </div>
+              </span></h1>
+          <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+          
+            <input type="checkbox" name="food" id="Lasagna" value="13.50">
+          
+              <hr>
+             
+                
+             <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+              <div class="container">
+                <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                <div class="text-block">
+                  <h2>$14.50</h2>
+                </div>
+              </div>
+            </span></h1>
+        <p class="w3-text-grey">Ravioli filled with cheese</p>
+        
+          <input type="checkbox" name="food" id="Ravioli" value="14.50">
+        
+            <hr>
+                
+            <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+              <div class="container">
+                <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                <div class="text-block">
+                  <h2>$11.00</h2>
+                </div>
+              </div>
+            </span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+        
+          <input type="checkbox" name="food" id="Spaghetti_Classica" value="11.00">
+        
+            <hr>
+          
+            <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+              <div class="container">
+                <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                <div class="text-block">
+                  <h2>$25.50</h2>
+                </div>
+              </div>
+            </span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+      
+        <input type="checkbox" name="food" id="Seafood_pasta" value="25.50">
+     
+          </div>
+           
+          
+          
+              <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$5.50</h2>
+                    </div>
+                  </div>
+                </span></h1>
+                <p class="w3-text-grey">Check For The Special Dates</p>
+                
+                  <input type="checkbox" name="food" id="Today_soup" value="5.50">
+                
+                <hr>
+
+                <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$8.50</h2>
+                    </div>
+                  </div>
+                </span></h1>
+               <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+               
+                <input type="checkbox" name="food" id="Bruschetta" value="8.50">
+                <hr>
+                
+                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$9.50</h2>
+                    </div>
+                  </div>
+                </span></h1>
+                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                
+                  <input type="checkbox" name="food" id="Garlic_bread" value="9.50">
+                <hr>
+                
+                <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">
+                  <div class="container">
+                    <img src="./images/Margherita.jpeg"  style="height:170px; width:220px;" >
+                    <div class="text-block">
+                      <h2>$10.50</h2>
+                    </div>
+                  </div>
+                </span></h1>
+              <p class="w3-text-grey">Tomatoes and mozzarella</p>
+              
+                <input type="checkbox" name="food" id="Tomozzarella" value="10.50">
+              </div><br>
+              
+                
+              <input type="submit"  onclick="getCheckboxValue()"  name="sub">
+             </form>
+            </div>
+          </div>
+          <script>
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                 tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-red";
+            }
+            document.getElementById("myLink").click();
+			
+           
+			
+            </script>
+			<script src="./calculations.js"></script>
+    </body>
+</html>

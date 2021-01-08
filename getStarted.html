@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./getStarted.css"/>
+		   <title>W3.CSS Template</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+
+
+</style>
+    </head>
+    <body>
+       <div class="regform"><h1>Registration Form</h1>
+        <div class="mane">
+               <form action="connect.php" method="post">
+                   <div id="name">
+                       <h2 class="name">Name</h2>
+                       <input class="firstname" type="text" name="first_name"><br>
+                       <label class="firstlabel">first name</label>
+                       <input class="lastname" type="text" name="last_name">
+                       <label class="lastlabel">last name</label>
+                   </div>
+                   <h2 class="name">Address</h2>
+                   <input class="company" type="text" name="company">
+                   <h2 class="name">email</h2>
+                   <input class="email" type="text" name="email">
+                   <h2 class="name">phone</h2>
+                   <input class="code" type="text" name="area_code">
+                   <label class="area-code">Area Code</label>
+                   <input class="number" type="text" name="phone">
+                   <label class="phone-number">Phone Number</label>
+                   <h2 class="name">Service Area</h2>
+                   <select class="option" name="subject">
+                       <option disabled="disabled" selected="selected">---Choose options</option>
+                       <option>Banaglore</option>
+                       <option>Mysore</option>
+                       <option>Mangalore</option>
+                       <option>Hassan</option>
+                       <option>Mandya</option>
+                       <option>Hubli</option>
+                   </select>
+                   <h2 id="student">Are You Registering for The First Time?</h2>
+                   <label class="radio">
+                       <input class="radio-one" type="radio"  name="yea">
+                       <span class="checkmark"></span>
+                       Yes
+                   </label>
+                   <label class="radio">
+                    <input class="radio-two" type="radio" name="nah">
+                    <span class="checkmark"></span>
+                    No
+                </label>
+                <button type="submit">Register</button>
+               </form>
+           </div>
+       </div>
+    </body>
+</html>

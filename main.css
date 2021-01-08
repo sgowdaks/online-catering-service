@@ -1,0 +1,63 @@
+*,html,body{
+    margin: 0;
+    padding :0;
+
+}
+header{
+    background-color:black;
+    height: 150px;
+    line-height: 150px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+.logo img{
+   margin-top: 20px; 
+}
+
+header nav ul li a{
+    padding-right: 30px;
+    font-weight: bold;
+    transition: all 0.6s ease-in;
+}
+
+
+header nav ul li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)),url(./images/one.jpeg);
+    background-size: 100% 100%;
+}
+
+.slider, .slider ul, .slider ul li{
+    height: 800px;
+    width: 100%;
+    color: rgb(27, 132, 202);
+    font-weight: 600;
+    text-align: center;
+}
+
+.img2{
+    background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(./images/twoo.jpeg);
+    background-size: 100% 100%;
+}
+
+.img3{
+    background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)),url(./images/three.jpeg);
+    background-size: 100% 100%;
+}
+
+
